@@ -1,0 +1,29 @@
+{
+    "name": "cmsfinder",
+    "description": "CMS Finder for FMG Suite users.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "web_accessible_resources" : [ 
+        "./fmglogo.png" 
+         ],
+    "icons": {
+        "16": "./fmglogo.png",
+        "32": "./fmglogo.png",
+        "48": "./fmglogo.png",
+        "128": "./fmglogo.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Open the popup",
+        "default_icon":"./fmglogo.png"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.fmgsuite.com/*",
+        "storage"
+    ] 
+}
